@@ -1,4 +1,3 @@
-// Data Eskul
 const eskulData = [
     { 
         nama: "Osis", 
@@ -63,7 +62,7 @@ const eskulData = [
         kategori: "Rohani & Sosial",
         deskripsi: "Kegiatan keagamaan dengan kajian, pengajian, dan kegiatan sosial. Anggota aktif dalam kegiatan keagamaan dan lomba kekristenan.", 
         image: "rokris.jpeg", 
-        jadwal: "", 
+        jadwal: "Selasa & Rabu 14.30-selesai", 
         pembina: "Agus Radiyanto",  
     },
     { 
@@ -72,7 +71,7 @@ const eskulData = [
         deskripsi: "Kegiatan musikal dengan latihan vokal, instrumen, dan performance. Anggota aktif dalam acara sekolah dan lomba kreatifitas musikal.", 
         image: "msk.jpeg", 
         jadwal: "setiap hari 14.30-selesai", 
-        pembina: "",  
+        pembina: "Siti Marjani, S.Pd",  
     },
     { 
         nama: "Robo Club", 
@@ -88,7 +87,7 @@ const eskulData = [
         deskripsi: "Kegiatan bela diri dengan latihan teknik, fisik, dan mental. Anggota aktif dalam lomba silat tingkat kota dan provinsi.", 
         image: "sil.jpeg", 
         jadwal: "Rabu 15.30-Selesai", 
-        pembina: "", 
+        pembina: "Miftachrudin, S.Pd", 
         prestasi: "🏆 Juara 2 Indonesia Paku Bumi Open 14th & Juara 1 Tingkat Lanjut" 
     }
 ];
@@ -155,7 +154,17 @@ function tampilkanDetail(index) {
     }
 }
 
+function isAuthenticated() {
+    return !!(sessionStorage.getItem('user_session') || localStorage.getItem('user_session'));
+}
+
 function daftarDariModal() {
+    if (!isAuthenticated()) {
+        openLoginModal();
+        showAuthMessage('loginForm', 'error', 'Silakan login atau daftar terlebih dahulu untuk mendaftar eskul.');
+        return;
+    }
+
     if (currentEskulIndex !== null) {
         const eskul = eskulData[currentEskulIndex];
         const selectUtama = document.getElementById('eskul_utama');
@@ -256,6 +265,12 @@ function handleSubmit(e) {
     e.preventDefault();
     clearFormMessage();
     
+    if (!isAuthenticated()) {
+        showFormMessage('error', 'Silakan login atau daftar terlebih dahulu sebelum mengirim pendaftaran.');
+        openLoginModal();
+        return;
+    }
+
     const formData = {
         nama: document.getElementById('nama')?.value || '',
         nis: document.getElementById('nis')?.value || '',
