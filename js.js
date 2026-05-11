@@ -15,7 +15,7 @@ const eskulData = [
         image: "prm.jpeg", 
         jadwal: "selasa, kamis 14.30-selesai | sabtu 08.00-selesai", 
         pembina: "Siti Marjani, S.pd & F. Sri Hartono, S.pd", 
-        prestasi: "🏆 " 
+        prestasi: "🏆 Juara 1 Pionering Team A & Juara 1 PBB" 
     },
     { 
         nama: "Pasilimka", 
@@ -24,7 +24,7 @@ const eskulData = [
         image: "gmbps.jpg.jpeg", 
         jadwal: "selasa, kamis 14.30-selesai | sabtu 08.00-selesai", 
         pembina: "Rio Dwiasmoro", 
-        prestasi: "🏆 " 
+        prestasi: "🏆 Juara Umum LKBB SOR ASEM & Juara Utama 3 LKBB Majapahit" 
     },
     { 
         nama: "MultiMedia", 
@@ -32,17 +32,15 @@ const eskulData = [
         deskripsi: "Belajar desain grafis, video editing, dan fotografi. Anggota aktif dalam dokumentasi acara sekolah dan lomba kreatifitas digital.", 
         image: "gmbmm.jpg.jpeg", 
         jadwal: "jum'at 14.30-selesai", 
-        pembina: "Kurniasari, S.pd", 
-        prestasi: "🏆 " 
+        pembina: "Kurniasari, S.pd",
     },
     { 
         nama: "PMR", 
         kategori: "Kesehatan & Sosial",
         deskripsi: "Kegiatan kesehatan dan sosial dengan pelatihan pertolongan pertama, donor darah, dan kegiatan sosial. Anggota berkesempatan mengikuti pelatihan tingkat nasional.", 
         image: "pmr.jpeg", 
-        jadwal: "", 
-        pembina: "", 
-        prestasi: "🏆 " 
+        jadwal: "Selasa & Kamis 14.30-selesai", 
+        pembina: "Vita Indra Mustika, S.Pd", 
     },
     { 
         nama: "Pencinta Alam", 
@@ -51,7 +49,6 @@ const eskulData = [
         image: "pa.jpeg", 
         jadwal: "selasa, kamis 14.30-selesai | sabtu 08.00-selesai", 
         pembina: "", 
-        prestasi: "🏆 " 
     },
     { 
         nama: "Rohani Islam", 
@@ -60,7 +57,6 @@ const eskulData = [
         image: "rohis.jpeg", 
         jadwal: "senin & rabu 14.30 - selesai", 
         pembina: "Rusmaniar, S.Ag, M.Pd.I", 
-        prestasi: "🏆 " 
     },
     { 
         nama: "Rohani Kristen", 
@@ -68,8 +64,7 @@ const eskulData = [
         deskripsi: "Kegiatan keagamaan dengan kajian, pengajian, dan kegiatan sosial. Anggota aktif dalam kegiatan keagamaan dan lomba kekristenan.", 
         image: "rokris.jpeg", 
         jadwal: "", 
-        pembina: "Agus Radiyanto", 
-        prestasi: "🏆 " 
+        pembina: "Agus Radiyanto",  
     },
     { 
         nama: "Musik", 
@@ -77,8 +72,7 @@ const eskulData = [
         deskripsi: "Kegiatan musikal dengan latihan vokal, instrumen, dan performance. Anggota aktif dalam acara sekolah dan lomba kreatifitas musikal.", 
         image: "msk.jpeg", 
         jadwal: "setiap hari 14.30-selesai", 
-        pembina: "", 
-        prestasi: "🏆 " 
+        pembina: "",  
     },
     { 
         nama: "Robo Club", 
@@ -87,7 +81,6 @@ const eskulData = [
         image: "robo.jpeg", 
         jadwal: "Rabu 14.30-15.30 ", 
         pembina: "Jemi U.B, S.pd", 
-        prestasi: "🏆 " 
     },
     { 
         nama: "Ipsilimka", 
@@ -96,7 +89,7 @@ const eskulData = [
         image: "sil.jpeg", 
         jadwal: "Rabu 15.30-Selesai", 
         pembina: "", 
-        prestasi: "🏆 " 
+        prestasi: "🏆 Juara 2 Indonesia Paku Bumi Open 14th & Juara 1 Tingkat Lanjut" 
     }
 ];
 scriptURL = "https://script.google.com/macros/s/AKfycbxnxT4qosthyKqenymdycLX_WjfA9u-YbYhbWo2QFxwsunOOgw1kXb7phRVADHY3a8Q/exec";
