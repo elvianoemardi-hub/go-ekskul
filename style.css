@@ -1352,6 +1352,22 @@ nav ul li a:hover::after {
 }
 
 @media (max-width: 768px) {
+    .auth-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.6rem;
+        width: 100%;
+        padding: 0.75rem 0;
+    }
+
+    .auth-buttons .btn-login,
+    .auth-buttons .btn-signup {
+        flex: 1 1 auto;
+        justify-content: center;
+        min-width: 140px;
+    }
+
     .menu-toggle {
         display: flex;
     }
@@ -1390,6 +1406,12 @@ nav ul li a:hover::after {
     
     .eskul-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .card-image {
+        aspect-ratio: 4 / 3;
+        object-fit: contain;
+        min-height: 180px;
     }
     
     .modal-actions {
