@@ -47,7 +47,7 @@ const eskulData = [
         deskripsi: "Kegiatan outdoor seperti hiking, camping, dan pelestarian lingkungan. Anggota aktif dalam kegiatan konservasi dan lomba kepramukaan.", 
         image: "pa.jpeg", 
         jadwal: "selasa, kamis 14.30-selesai | sabtu 08.00-selesai", 
-        pembina: "", 
+        pembina: "Hapsari Shinta Aristaningrum, S.ST", 
     },
     { 
         nama: "Rohani Islam", 
